@@ -100,10 +100,3 @@ class FormTestBot(object):
         self.driver.find_element(By.CSS_SELECTOR, self.hooks['street']).send_keys(street)
         
         self.driver.find_element(By.CSS_SELECTOR, self.hooks['membership']).click()
-
-
-def main():
-    FormTestBot('https://eventdata.uk/Delegate/LACA2022.aspx', './hooks.json')
-
-if __name__ == '__main__':
-    main()
